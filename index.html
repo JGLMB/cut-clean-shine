@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,18 +24,26 @@
       margin: 0;
     }
 
-
     .section {
       padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
       text-align: center;
     }
 
     .card {
       background: #111;
-      margin: 15px auto;
       padding: 20px;
       border-radius: 10px;
-      max-width: 400px;
+      width: 250px;
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
     }
 
     .btn {
@@ -88,6 +97,7 @@
   <p>Cut. Clean. Shine.</p>
 </header>
 
+<!-- SERVICES -->
 <div class="section">
 
   <div class="card">
@@ -112,18 +122,30 @@
 
 </div>
 
-<div class="section"> <h2>Contact Us</h2> <!-- CLICK TO CALL --> <a class="btn" href="9063643677">📞 Call Now</a> <!-- TEXT BUTTON --> <a class="btn" href="sms:9063643677">💬 Text Us</a> <p>Upper Peninsula</p> </div> <div class="section"> 
-  <h2>Book Now</h2>
+<!-- CONTACT -->
+<div class="section"> 
+  <div>
+    <h2>Contact Us</h2>
+    <a class="btn" href="tel:9063643677">📞 Call Now</a>
+    <a class="btn" href="sms:9063643677">💬 Text Us</a>
+    <p>Upper Peninsula</p>
+  </div>
+</div>
 
-  <!-- SIMPLE EMAIL FORM -->
-  <form action="bentleywainio@yahoo.com" method="POST" enctype="text/plain">
-    <input type="text" name="Name" placeholder="Your first and last name" required>
-    <input type="text" name="Phone" placeholder="Your Phone number" required>
-    <input type="text" name="Service" placeholder="Service Needed">
-    <textarea name="Details" placeholder="Adress/job details..."></textarea>
-    <button type="submit">Send Request</button>
-  </form>
+<!-- BOOKING -->
+<div class="section"> 
+  <div>
+    <h2>Book Now</h2>
 
+    <form action="mailto:bentleywainio@yahoo.com" method="POST" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your first and last name" required>
+      <input type="text" name="Phone" placeholder="Your Phone number" required>
+      <input type="text" name="Service" placeholder="Service Needed">
+      <textarea name="Details" placeholder="Address/job details..."></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+
+  </div>
 </div>
 
 <footer>
